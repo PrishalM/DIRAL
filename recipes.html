@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Recipes - ディラル DIRAL</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+ <script src="https://kit.fontawesome.com/08011ee24d.js" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    
+<!-- navbar -->
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container-lg">
+<!-- Navbar logo -->
+    <a class="navbar-brand order-md-1 order-sm-1 order-1 pr-3" href="index.html">ディラル &nbsp; &nbsp;DIRAL</a>
+<!-- Navbar link items -->
+    <div class="navbar-collapse order-md-2 order-sm-4 order-4 collapse" id="navbarsExample07XL" style="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-restaurants.html">Our restaurants</a>
+        </li>
+        <li class="nav-item active dropdown">
+          <a class="nav-link dropdown-toggle" href="our-recipes.html" id="dropdown07XL" data-toggle="dropdown" aria-expanded="false">Our recipes <span class="sr-only">(current)</span></a>
+          <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown07XL">
+           <a class="dropdown-item" href="recipes.html">Karaage Fried Chicken</a>
+            <a class="dropdown-item" href="#">Takoyaki balls</a>
+            <a class="dropdown-item" href="#">Sushi</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!-- Navbar CTA -->
+     <a class="nav-cta-button btn btn-primary btn-light order-md-3 order-sm-2 order-2" href="reservation.html" role="button">Make a reservation</a>
+<!-- Navbar Hamburger menu -->
+    <button class="navbar-toggler order-md-3 order-sm-3 order-3 collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-hamburger" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+      <script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+      
+    </button>
+  </div>
+</nav>
+    
+<!-- breadcrumbs -->
+    <div id="breadcrumbs">
+      <div class="container-md">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="recipes.html">Recipes</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Karaage Fried Chicken</li>
+        </ol>
+      </nav>
+      </div>
+    </div>
+<!-- hero section-->
+    <div id="hero">
+      <div class="container-md">
+      
+      <div class="row">
+        <div class="col-lg-4 col-12 recipeImage">
+          <img src="https://www.chatelaine.com/wp-content/uploads/2016/11/Japanese-fried-chicken-bites-e1479849536407.jpg">
+        </div>
+        <div class="col-lg-8 col-12 heroContent">
+          <div>
+        <h1 class="py-4">Karaage Fried Chicken</h1>
+      </div>
+        <div class="">
+          <span class = "fa fa-star checked"></span>  
+          <span class = "fa fa-star checked"></span>  
+          <span class = "fa fa-star checked"></span>  
+          <span class = "fa fa-star checked"></span> 
+          <span class = "fa fa-star-o checked"> </span> 
+          &nbsp;from 239 customer ratings
+        </div>
+            
+            <p class="py-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <div class="recipeInfo">
+                
+              <div class="">
+                <p>Cooking time: 35 mins</p>
+              </div>
+            </div>
+        
+        </div
+        </div>
+      </div>
+    </div>
+
+
+    
+<div class="container-md">
+<div class="d-flex flex-wrap justify-content-around">
+<!--   <div class="row"> -->
+    
+    <div id="checklist" class="col-6">
+      <h2 class="py-4">Shopping list</h2>
+    <form action="/action_page.php">
+      <input type="checkbox" id="ing1" name="ing1" value="ing1">
+      <label for="ing1">500g (approx 4) Boneless Skin on Chicken Thighs</label><br>
+      <input type="checkbox" id="ing2" name="ing2" value="ing2">
+      <label for="ing2"> 750ml-1 Litre Oil (for deep frying)</label><br>
+      <input type="checkbox" id="ing3" name="ing3" value="ing3">
+      <label for="ing3"> 225g Plain Flour</label><br>
+       <input type="checkbox" id="ing4" name="ing4" value="ing4">
+      <label for="ing4">75g Cornflour</label><br>
+      <input type="checkbox" id="ing5" name="ing5" value="ing5">
+      <label for="ing5">2 Eggs, beaten</label><br>
+      <input type="checkbox" id="ing6" name="ing6" value="ing6">
+      <label for="ing6">2 tbsp Soy Sauce</label><br>
+       <input type="checkbox" id="ing7" name="ing7" value="ing7">
+      <label for="ing7">1 tbsp Sake (optional I guess?)</label><br>
+      <input type="checkbox" id="ing8" name="ing8" value="ing8">
+      <label for="ing8">2 tsp Garlic, minced</label><br>
+      <input type="checkbox" id="ing9" name="ing9" value="ing9">
+      <label for="ing9">2 tsp Ginger, minced/finely grated</label><br>
+       <input type="checkbox" id="ing10" name="ing10" value="ing10">
+      <label for="ing10">2 tsp Mayonnaise (Kewpie brand ideally)</label><br>
+      <input type="checkbox" id="ing11" name="ing11" value="ing11">
+      <label for="ing11">2 tsp Sesame Oil</label><br>
+      <input type="checkbox" id="ing12" name="ing12" value="ing12">
+      <label for="ing12">Salt & White Pepper, to taste</label><br>  
+    </form>
+      </div>
+  
+
+ 
+
+
+  
+<div class="container col-6">
+<h2 class="py-4">Method</h2>
+    <ol>
+      <li>Marinate: Dice chicken into large bite sized pieces and place in a mixing bowl or large zip lock bag. Add in soy sauce, garlic, ginger, sake, mayo and sesame oil. Give it a good mix and marinate in the fridge for a minimum of 30mins.</li>
+      <li>Dredge: Line up two bowls - the first with beaten egg and the second with flour, cornflour/cornstarch and a few hefty pinches of salt and pepper. Take a piece of chicken, coat in egg then place in the flour. Coat it in the flour, place on rack then repeat.</li>
+      <li>1st Fry: Heat up oil in a suitably sized pot/pan to 160C/320F. In batches of 4-5 gently lower the chicken into the oil and fry for 3-4mins until they start to turn a pale golden colour. The first fry is to cook the chicken through and get it to around 80% crispiness. Remove and repeat with remaining chicken.</li>
+      <li>2nd Fry: This works best if you've let the chicken dry out for 5-10mins. Increase oil temp to 190C/375F-200C/390F and place half of the chicken in and flash fry for 1min 30 seconds, or until the batter turns a deeper golden and the chicken is visibly more crispy. Remove and repeat with second batch.</li>
+      <li>Serve: Serve up right away with your dip of choice and lemon wedges (optional)</li>
+    </ol>
+  </div>
+<div class="ratingContainer py-4">
+<h6>Rate this recipe</h6>
+  <ul class="rate-area">
+                <input type="radio" id="5-star" name="crating" value="5">
+<label for="5-star" title="Amazing"></label>
+                <input type="radio" id="4-star" name="crating" value="4">
+<label for="4-star" title="Good"></label>
+                <input type="radio" id="3-star" name="crating" value="3">
+<label for="3-star" title="Average"></label>
+                <input type="radio" id="2-star" name="crating" value="2">
+<label for="2-star" title="Not Good"></label>
+                <input type="radio" id="1-star" required=""
+ name="crating" value="1" aria-required="true">
+<label for="1-star" title="Bad"></label>
+</div>
+</div>
+
+<!-- </div> -->
+
+
+</div>
+<footer class="d-flex sticky-top justify-content-center">
+  <p class="text-muted text-center">©2022 Diral by <a href="https://github.com/dnayir">Diren</a> & <a href="https://github.com/Prishal-git">Prishal</a> </p>
+</footer>
+  </body>
+</html>

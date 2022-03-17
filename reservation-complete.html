@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Reservation complete - ディラル DIRAL</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container-lg">
+<!-- Navbar logo -->
+    <a class="navbar-brand order-md-1 order-sm-1 order-1 pr-3" href="index.html">ディラル &nbsp; &nbsp;DIRAL</a>
+<!-- Navbar link items -->
+    <div class="navbar-collapse order-md-2 order-sm-4 order-4 collapse" id="navbarsExample07XL" style="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-restaurants.html">Our restaurants</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="our-recipes.html" id="dropdown07XL" data-toggle="dropdown" aria-expanded="false">Our recipes</a>
+          <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown07XL">
+        <a class="dropdown-item" href="recipes.html">Karaage Fried Chicken</a>
+            <a class="dropdown-item" href="#">Takoyaki balls</a>
+            <a class="dropdown-item" href="#">Sushi</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!-- Navbar CTA -->
+     <a class="nav-cta-button btn btn-primary btn-light order-md-3 order-sm-2 order-2" href="reservation.html" role="button">Make a reservation</a>
+<!-- Navbar Hamburger menu -->
+    <button class="navbar-toggler order-md-3 order-sm-3 order-3 collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-hamburger" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+      <script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+      
+    </button>
+  </div>
+</nav>
+
+ 
+  
+
+<div class="reservationForm d-flex">
+<form class="form-signin">
+  <div class="text-center mb-4">
+    <i class="bi bi-envelope-fill" style="font-size: 2rem;"></i>
+    <h1 class="h3 mb-3 font-weight-normal">We will send you a confirmation email within an hour</h1>
+    <p></p>
+  </div>
+</form>
+</div>
+
+<footer class="d-flex sticky-top justify-content-center">
+  <p class="text-muted text-center">©2022 Diral by <a href="https://github.com/dnayir">Diren</a> & <a href="https://github.com/Prishal-git">Prishal</a> </p>
+</footer>
+  </body>
+</html>
