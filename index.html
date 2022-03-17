@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ディラル DIRAL</title>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  
+  <body>
+
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
+  <div class="container-lg">
+<!-- Navbar logo -->
+    <a class="navbar-brand order-md-1 order-sm-1 order-1 pr-3" href="index.html">ディラル &nbsp; &nbsp;DIRAL</a>
+<!-- Navbar link items -->
+    <div class="navbar-collapse order-md-2 order-sm-4 order-4 collapse" id="navbarsExample07XL" style="">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="our-restaurants.html">Our restaurants</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="our-recipes.html" id="dropdown07XL" data-toggle="dropdown" aria-expanded="false">Our recipes</a>
+          <div class="dropdown-menu dropdown-content" aria-labelledby="dropdown07XL">
+            <a class="dropdown-item" href="recipes.html">Karaage Fried Chicken</a>
+            <a class="dropdown-item" href="#">Takoyaki balls</a>
+            <a class="dropdown-item" href="#">Sushi</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+<!-- Navbar CTA -->
+     <a class="nav-cta-button btn btn-primary btn-light order-md-3 order-sm-2 order-2" href="reservation.html" role="button">Make a reservation</a>
+<!-- Navbar Hamburger menu -->
+    <button class="navbar-toggler order-md-3 order-sm-3 order-3 collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+<div class="container-hamburger" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+      <script>
+function myFunction(x) {
+  x.classList.toggle("change");
+}
+</script>
+      
+    </button>
+  </div>
+</nav>
+    
+<div class="jumbotron">
+    <div class="container">
+      <h1 class="display-4"><strong>Contemporary Japanese Cusine</strong></h1>
+      <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+      <p><a class="cta-button btn btn-primary btn-lg" href="reservation.html" role="button">Make a reservation</a></p>
+    </div>
+  </div>
+
+ 
+    <div class="container RestaurantsContainer"> 
+    <div class="container-lg">
+<h2 class="display-4 text-center py-4"><strong>Make a reservation and come see us soon at...</strong></h2>
+    </div>
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="carousel-caption">
+       <h1>Soho</h1>
+     </div>
+      <img src="https://media.timeout.com/images/102925112/image.jpg" alt="Soho restaurant" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+       <h1>Kingston</h1>
+     </div>
+      <img src="https://i.pinimg.com/originals/04/79/87/04798756b2566e7791cc6ee46f8ec0f6.jpg" alt="kingston restaurant" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+  <div class="carousel-caption">
+       <h1>Stratford</h1>
+     </div>
+      <img src="https://www.reclaimedflooringco.com/wp-content/uploads/2019/01/.bi/ichibuns_london_025_1140_auto_-1_resize.jpg" alt="stratford restaurant" width="1100" height="500">
+    </div>
+  </div>
+
+<!-- original carousel -->
+<!--    <div class="carousel-inner">
+    <div class="carousel-item active">
+     <div class="carousel-caption">
+       <h1>Soho</h1>
+     </div>
+      <img src="https://www.wallpapertip.com/wmimgs/173-1732421_photo-wallpaper-sticks-sauce-sushi-sushi-rolls-japanese.jpg" alt="Mixed Sushi Set" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+      <div class="carousel-caption">
+       <h1>Kingston</h1>
+     </div>
+      <img src="https://cdn.mwallpapers.com/photos/celebrities/hd-wallpapers/seafood-sushi-food-salad-android-iphone-hd-wallpaper-background-downloadhd-wallpapers-desktop-background-android-iphone-1080p-4k-19bbz.jpg" alt="Mixed seafood set" width="1100" height="500">
+    </div>
+    <div class="carousel-item">
+  <div class="carousel-caption">
+       <h1>Stratford</h1>
+     </div>
+      <img src="https://s3.amazonaws.com/finecooking.s3.tauntonclud.com/app/uploads/2020/02/25134231/fried-chicken-karaage_wide.jpg" alt="Mixed Set" width="1100" height="500">
+    </div>
+  </div> -->
+  
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
+
+<footer class="d-flex sticky-top justify-content-center">
+  <p class="text-muted text-center">©2022 Diral by <a href="https://github.com/dnayir">Diren</a> & <a href="https://github.com/Prishal-git">Prishal</a> </p>
+</footer>
+  </body>
+</html>
