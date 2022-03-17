@@ -11,12 +11,15 @@
   border-color: rgb(0 123 255 / 0%);
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #db0000;
   margin: 6px 0;
   transition: 0.4s;
+  border-radius: 2px;
 }
 
 .change .bar1 {
@@ -24,7 +27,9 @@
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
@@ -37,7 +42,8 @@
   border-color: transparent;
 }
 
-.nav-cta-button:hover, .nav-cta-button:active {
+.nav-cta-button:hover,
+.nav-cta-button:active {
   background-color: #e9ecee;
   color: #db0000;
   border-color: #db0000;
@@ -46,9 +52,11 @@
 .cta-button {
   background-color: #db0000;
   color: #e9ecee;
+  border-color: transparent;
 }
 
-.cta-button:hover, .cta-button:active {
+.cta-button:hover,
+.cta-button:active {
   background-color: #e9ecee;
   color: #db0000;
   border-color: #db0000;
@@ -59,7 +67,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -70,12 +78,17 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: #db0000;}
-
+.dropdown:hover .dropbtn {
+  background-color: #db0000;
+}
 
 footer {
   height: 60px;
@@ -92,7 +105,6 @@ footer p {
   padding-right: 10px;
   margin-top: auto;
   margin-bottom: auto;
-  
 }
 
 footer a {
@@ -100,20 +112,22 @@ footer a {
   text-decoration: underline;
 }
 
-
 /* Home page  */
 .jumbotron {
   background-image: url("backgroundHero.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 60vh;
+  height: 70vh;
+  border-radius: 0;
 }
 
-.jumbotron .container {
+.jumbotron .container-lg .container {
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 20px;
+  width: 75%;
+  margin-left: 0;
 }
 
 .RestaurantsContainer {
@@ -121,12 +135,6 @@ footer a {
   padding-bottom: 30px;
   margin-bottom: 40px;
 }
-
-
-/* .carousel-caption {
-  top: 0;
-  bottom: auto;
-} */
 
 .carousel-caption h1 {
   background: rgba(0, 0, 0, 0.5);
@@ -138,13 +146,18 @@ footer a {
   height: 100%;
 }
 
-@media screen and (max-width : 768px) {
+@media screen and (max-width: 768px) {
   .carousel-inner img {
-  width: auto;
+    width: auto;
     height: 80vh;
-}
+  }
 }
 
+@media screen and (max-width: 1200px) {
+  .jumbotron .container-lg .container {
+    width: 100%;
+  }
+}
 
 /* Restaurants page */
 
@@ -156,7 +169,6 @@ footer a {
   opacity: 0.5;
 }
 
-
 /* Receipes page */
 
 #breadcrumbs {
@@ -166,7 +178,7 @@ footer a {
 
 #hero .row {
   background-color: #e9ecee;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .recipeImage {
@@ -175,8 +187,6 @@ footer a {
   padding-left: 20px;
 }
 
-
-
 .recipeImage img {
   width: 300px;
   display: block;
@@ -184,13 +194,15 @@ footer a {
   margin-right: auto;
 }
 
-.heroContent{
+.heroContent {
   padding: 20px;
 }
 
-.fa-star, .fa-star-o, .fa-star-half-o {
+.fa-star,
+.fa-star-o,
+.fa-star-half-o {
   color: #f5cc00;
-  font-size: 1.25em
+  font-size: 1.25em;
 }
 
 .recipeInfo {
@@ -198,57 +210,49 @@ footer a {
 }
 
 #checklist {
-  width: 450px
-  
+  width: 450px;
 }
 
-.ratingContainer{
-  display:flex;
-  justify-content:center;
+.ratingContainer {
+  display: flex;
+  justify-content: center;
 }
-
-
-
-
-
-
 
 .rate-area {
-    float:left;
-    border-style: none;
+  float: left;
+  border-style: none;
 }
 
 .rate-area:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-    clip:rect(0,0,0,0);
+  position: absolute;
+  top: -9999px;
+  clip: rect(0, 0, 0, 0);
 }
 
 .rate-area:not(:checked) > label {
-    float: right;
-    width: 1em;
-    overflow: hidden;
-    white-space: nowrap;
-    cursor: pointer;
-    font-size: 40px;
-    line-height: 32px;
-    color: lightgrey;
-    margin-bottom: 10px !important;
-} 
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 32px;
+  color: lightgrey;
+  margin-bottom: 10px !important;
+}
 
 .rate-area:not(:checked) > label:before {
-    content: '★';
+  content: "★";
 }
 
 .rate-area > input:checked ~ label {
-    color: #ffd500;
-    text-shadow: none;
+  color: #ffd500;
+  text-shadow: none;
 }
 
 .rate-area:not(:checked) > label:hover,
 .rate-area:not(:checked) > label:hover ~ label {
-    color: #ffd500;
-    
+  color: #ffd500;
 }
 
 .rate-area > input:checked + label:hover,
@@ -256,39 +260,43 @@ footer a {
 .rate-area > input:checked ~ label:hover,
 .rate-area > input:checked ~ label:hover ~ label,
 .rate-area > label:hover ~ input:checked ~ label {
-    color: #ffd500;
-    text-shadow: none;
-    
+  color: #ffd500;
+  text-shadow: none;
 }
 
 .rate-area > label:active {
-    position:relative;
-    top:0px;
-    left:0px; 
+  position: relative;
+  top: 0px;
+  left: 0px;
 }
-
-
-
 
 /* Reservation page */
 
-.reservationForm label{
+.reservationForm {
+  height: 90vh;
+}
+
+.reservationForm label {
   padding-top: 1em;
 }
 
-
 .form-signin {
-    width: 100%;
-    height: 80%;
-    max-width: 420px;
-    max-height: 530px;
-    padding: 15px;
-    padding-bottom: 5em;
-    margin: auto;
+  width: 100%;
+  height: 80%;
+  max-width: 420px;
+  max-height: 530px;
+  padding: 15px;
+  padding-bottom: 5em;
+  margin: auto;
 }
 
-
 /* Reservation complete page */
- .reservationForm {
-   height: 75vh;
- }
+.reservationFormComplete {
+  height: auto;
+}
+
+.form-signin-complete {
+  max-width: 420px;
+  padding-bottom: 0;
+  margin: auto;
+}
